@@ -4,7 +4,7 @@ trigger:
 variables:
   tag: '$(Build.BuildId)'
 
-pool: denzil
+pool: 'Azure Pipelines'
 stages:
   - stage: Build
     displayName: Build Stage
