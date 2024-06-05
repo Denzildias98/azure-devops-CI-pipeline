@@ -66,5 +66,5 @@ stages:
                 manifests: |
                   $(System.ArtifactsDirectory)/kube-manifests/01-Deployment-and-LoadBalancer-Service.yml
                 # containers: '$(containerRegistry)/$(imageRepository):$(tag)'
-                containers: 'azureaksregistry1.azurecr.io/app:$(tag)'
+                containers: 'azureaksregistry1.azurecr.io/app:$(Build.BuildId)'
                 imagePullSecrets: 'dock-secret'
