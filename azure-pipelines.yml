@@ -64,7 +64,7 @@ stages:
                 kubernetesServiceConnection: 'aks-app-deployment'
                 namespace: 'app'
                 manifests: |
-                  $(System.ArtifactsDirectory)/manifests/deployment.yml
-                  $(System.ArtifactsDirectory)/manifests/service.yml
+                  $(System.ArtifactsDirectory)/kube-manifests/deployment.yml
+                  $(System.ArtifactsDirectory)/kube-manifests/service.yml
                 containers: '$(containerRegistry)/$(imageRepository):$(tag)'
                 imagePullSecrets: '$(imagePullSecret)'
