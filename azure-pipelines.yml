@@ -66,4 +66,4 @@ stages:
                 manifests: |
                   $(System.ArtifactsDirectory)/kube-manifests/01-Deployment-and-LoadBalancer-Service.yml
                 containers: '$(containerRegistry)/$(imageRepository):$(tag)'
-                imagePullSecrets: '$(imagePullSecret)'
+                imagePullSecrets: 'dock-secret'
