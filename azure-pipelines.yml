@@ -22,9 +22,9 @@ stages:
              Dockerfile: '**/Dockerfile'
              tags: 
                $(tag)      
-        #  # Task 2 publish build artifacts
-        #  - task: PublishBuildArtifacts@1
-        #    inputs:
-        #     PathtoPublish: '$(System.DefaultWorkingDirectory)/kube-manifests'
-        #     ArtifactName: 'kube-manifests'
-        #     publishLocation: 'Container'
+         # Task 2 publish build artifacts
+         - task: PublishBuildArtifacts@1
+           inputs:
+            PathtoPublish: '$(System.DefaultWorkingDirectory)/kube-manifests'
+            ArtifactName: 'kube-manifests'
+            publishLocation: 'Container'
